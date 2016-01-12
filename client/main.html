@@ -1,0 +1,48 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Files operation chains</title>
+</head>
+
+<body>
+    
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Новая цепочка</h4>
+      </div>
+      <div class="modal-body">
+        Вы создали новую цепочку действий, желаете ее сохранить?<br>
+        <input type="text" placeholder="Имя файла" class="form-control" id="chainname">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Нет</button>
+        <button type="button" class="btn btn-primary" id="saveChainButton">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Fopchains</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                {{> loginButtons}} <!-- here -->
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div id="render-target"></div>
+    </div>
+</body>
